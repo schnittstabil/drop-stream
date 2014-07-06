@@ -25,10 +25,6 @@ post.on('data', function() {
   count++;
 });
 
-post.on('data', function() {
-  count++;
-});
-
 post.on('finish', function() {
   assert.strictEqual(count, 0, count + ' chunks detected'); // won't throw
 });
